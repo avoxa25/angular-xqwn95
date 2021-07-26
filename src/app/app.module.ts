@@ -9,10 +9,13 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertComponent } from './product-alert/product-alert.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
   imports: [
     BrowserModule,
+    HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
@@ -20,13 +23,14 @@ import { CartComponent } from './cart/cart.component';
       { path: 'cart', component: CartComponent }
     ])
   ],
-  declarations: [	
+  declarations: [		
     AppComponent,
     TopBarComponent,
     ProductListComponent,
     ProductAlertComponent,
     ProductDetailsComponent,
-      CartComponent
+      CartComponent,
+      ShippingComponent
    ],
   bootstrap: [
     AppComponent
