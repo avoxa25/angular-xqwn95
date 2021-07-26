@@ -15,15 +15,16 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      { path: 'products/:productd', component: ProductDetailsComponent }
     ])
   ],
-  declarations: [		
+  declarations: [
     AppComponent,
     TopBarComponent,
     ProductListComponent,
-      ProductAlertComponent,
-      ProductDetailsComponent
-   ],
+    ProductAlertComponent,
+    ProductDetailsComponent
+  ],
   bootstrap: [
     AppComponent
   ]
